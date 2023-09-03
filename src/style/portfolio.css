@@ -1,0 +1,67 @@
+
+.height-fix{
+  margin-top: -82px;
+  padding-top: 82px;
+}
+#port{
+  height: 850px;
+  color: white;
+  margin: 200px;
+  /* border-bottom: 1px solid white; */
+}
+
+.port{
+  
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px; height: 200px;  
+  perspective:600px;
+  margin: 0 20px;
+}
+.port .item {
+  width: 150px; height: 200px;
+  border-radius: 10%;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 1s;
+}
+
+.port .item.front {
+  position: absolute;
+  background-color: orange;
+  transform: rotateY(0deg);
+ 
+}
+
+.port:hover .item.front {
+  transform: rotateY(-180deg);
+}
+
+.port .item.back {
+  background-color: orange;
+  transform:rotateY(180deg);
+}
+.port:hover .item.back {
+  transform:rotateY(0deg);
+}
+
+#card {
+  text-decoration: none;
+
+}
+#title{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+.ports{
+  display: flex;
+  position: absolute;
+  top: 3600px;
+  left: 600px;
+  
+}
+
+

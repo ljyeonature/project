@@ -1,0 +1,74 @@
+footer{
+  padding-bottom: 60px;
+  color: white;
+}
+
+
+h2{  
+  font-size: 54px;
+  text-align: center;
+  margin: 0 0 50px;
+  position: relative;
+  top: -150px;
+}
+
+
+.contacts{
+  margin: 0 50px;
+  padding: 0 0 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts > div{ width: 300px;  margin: 0 30px;}
+.contacts > div > h3{
+  /* background-color: #FFDC7E; */
+  padding: 10px;
+  font-size: 24px;
+  text-align: left;
+}
+.contacts > div > h3::after{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 38px;
+  height: 38px;
+  background-size: cover;
+  content: '';
+}
+.height-fix{
+  margin-top: -82px;
+  padding-top: 82px;
+}
+.contacts > .contacts__email > h3::after{
+  left: 190px;
+  background-image: url(../components/image/mail.jpg);
+}
+.contacts > .contacts__phone > h3::after{
+  left: 170px;
+  background-image: url(../components/image/phone.png);
+}
+.contacts > .contacts__blog > h3::after{
+  left: 200px;
+  background-image: url(../components/image/blog.jpg);
+}
+.contacts > div > p{
+  border: 1px solid white;
+  border-top: none;
+  padding: 10px;
+  text-align: center;
+}
+#blog {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: scale(1);
+  transition: .3s;
+  transform: scale(1);
+
+}
+#blog:hover {
+  border-bottom: 5px solid rgb(255, 94, 0);
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
